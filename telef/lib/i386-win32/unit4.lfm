@@ -1,0 +1,96 @@
+object Form4: TForm4
+  Left = 591
+  Height = 165
+  Top = 526
+  Width = 320
+  Caption = 'Form4'
+  ClientHeight = 165
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '1.4.4.0'
+  object Edit1: TEdit
+    Left = 112
+    Height = 23
+    Top = 16
+    Width = 192
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 112
+    Height = 23
+    Top = 64
+    Width = 192
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 112
+    Height = 23
+    Top = 112
+    Width = 192
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 24
+    Width = 89
+    Caption = 'Meno a prizvisko'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 61
+    Height = 15
+    Top = 72
+    Width = 36
+    Caption = 'Adresa'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 18
+    Height = 15
+    Top = 120
+    Width = 79
+    Caption = 'Telefónne číslo'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 200
+    Height = 25
+    Top = 140
+    Width = 107
+    Caption = 'Vypíš'
+    OnClick = Button1Click
+    TabOrder = 3
+    Visible = False
+  end
+  object Button2: TButton
+    Left = 200
+    Height = 25
+    Top = 140
+    Width = 104
+    Caption = 'Ďalší'
+    OnClick = Button2Click
+    TabOrder = 4
+    Visible = False
+  end
+  object Button3: TButton
+    Left = 112
+    Height = 25
+    Top = 140
+    Width = 75
+    Caption = 'Odstráň'
+    OnClick = Button3Click
+    TabOrder = 5
+    Visible = False
+  end
+  object Button4: TButton
+    Left = 200
+    Height = 25
+    Top = 140
+    Width = 107
+    Caption = 'Koniec'
+    OnClick = Button4Click
+    TabOrder = 6
+    Visible = False
+  end
+end

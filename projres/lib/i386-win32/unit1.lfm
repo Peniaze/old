@@ -1,0 +1,98 @@
+object Form1: TForm1
+  Left = 774
+  Height = 526
+  Top = 256
+  Width = 288
+  ClientHeight = 526
+  ClientWidth = 288
+  Color = clSilver
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '1.4.4.0'
+  object Image1: TImage
+    Left = 39
+    Height = 400
+    Top = 96
+    Width = 200
+  end
+  object Label1: TLabel
+    Left = 39
+    Height = 24
+    Top = 64
+    Width = 87
+    Caption = 'SCORE: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Cooper Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 39
+    Height = 24
+    Top = 40
+    Width = 79
+    Caption = 'LEVEL:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Cooper Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Image2: TImage
+    Left = 224
+    Height = 60
+    Top = 104
+    Width = 60
+  end
+  object Label3: TLabel
+    Left = 72
+    Height = 1
+    Top = 8
+    Width = 1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Cooper Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 39
+    Height = 24
+    Top = 496
+    Width = 80
+    Caption = 'Restart'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Cooper Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label4Click
+  end
+  object Label5: TLabel
+    Left = 192
+    Height = 24
+    Top = 496
+    Width = 47
+    Caption = 'Quit'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Cooper Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label5Click
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+  end
+end

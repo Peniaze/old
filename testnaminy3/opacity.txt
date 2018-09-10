@@ -1,0 +1,26 @@
+function drawopacity(bitmap,background:TBitmap; topp,leftt,opacity:integer) :TBitmap;
+var i,j,k,a:integer; clrsnew,clrsback:array [1..3] of 0..$FFFFFF;
+begin
+     drawopacity:=TBitmap.create;
+     drawopacity.Height:=bitmap.height;
+     drawopacity.width:=bitmap.width;
+     for i:=0 to bitmap.width do
+         for j:=0 to bitmap.height do
+             begin
+                  a:=background.canvas.Pixels[leftt+i,topp+j];
+                  clrsback[1]:=a mod $100;
+                  clrsback[2]:=a mod $10000 div $100;
+                  clrsback[3]:=a div $10000;
+                  a:=bitmap.canvas.Pixels[i,j];
+                  clrsnew[1]:=a mod $100;
+                  clrsnew[2]:=a mod $10000 div $100;
+                  clrsnew[3]:=a div $10000;
+                  if not (a=$646464) then
+                  for k:=1 to 3 do
+                      if clrsback[k]*(100-opacity) / 100+clrsnew[k]*opacity/100>$FF then
+                         clrsback[k]:=$FF
+                      else
+                         clrsback[k]:=round(clrsback[k]*(100-opacity) / 100)+round(clrsnew[k]*opacity/100);
+                  drawopacity.canvas.pixels[i,j]:=clrsback[1]+clrsback[2]*$100+clrsback[3]*$10000;
+             end;
+end;

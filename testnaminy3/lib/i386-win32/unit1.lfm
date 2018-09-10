@@ -1,0 +1,24 @@
+object Form1: TForm1
+  Left = 140
+  Height = 817
+  Top = 17
+  Width = 1617
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnCreate = FormCreate
+  LCLVersion = '1.4.4.0'
+  object Image1: TImage
+    Left = 0
+    Height = 800
+    Top = 0
+    Width = 1600
+    OnClick = Image1Click
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    left = 812
+    top = 293
+  end
+end
